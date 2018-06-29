@@ -16,5 +16,6 @@ class MemosController extends Controller
     {
         $memos = Memo::all();
         return $memos;
+        return view('memos.index',compact('memos'));
     }
 }
